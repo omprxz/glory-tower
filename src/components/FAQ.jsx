@@ -60,7 +60,7 @@ function FAQItem({ faq, index, isOpen, onToggle }) {
             transition={{ duration: 0.3 }}
             className="overflow-hidden"
           >
-            <div className="px-6 pb-6 text-white leading-relaxed text-lg">
+            <div className="px-6 pb-6 text-black leading-relaxed text-lg">
               {faq.answer}
             </div>
           </motion.div>
@@ -86,7 +86,7 @@ export default function FAQ() {
             FREQUENTLY ASKED QUESTIONS
           </h2>
           <div className="h-1 w-32 bg-golden mx-auto mb-6" />
-          <p className="text-xl text-white max-w-3xl mx-auto">
+          <p className="text-xl text-black max-w-3xl mx-auto">
             Find answers to common questions about The Glory Towers
           </p>
         </motion.div>

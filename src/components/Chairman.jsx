@@ -31,7 +31,7 @@ export default function Chairman() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-white"
+            className="text-black"
           >
             <div className="mb-8">
               <motion.div 
@@ -45,20 +45,20 @@ export default function Chairman() {
             </div>
             
             <div className="space-y-6 text-lg leading-relaxed">
-              <p className="text-white/90">
+              <p className="text-black/90">
                 "Welcome to The Glory Towers, where luxury meets lifestyle. Our vision is to create not just apartments, but homes that inspire and elevate your everyday living experience."
               </p>
               
-              <p className="text-white/90">
+              <p className="text-black/90">
                 "With meticulous attention to detail and unwavering commitment to quality, we have crafted spaces that reflect sophistication and comfort. Each element has been thoughtfully designed to enhance your quality of life."
               </p>
               
-              <p className="text-white/90">
+              <p className="text-black/90">
                 "The Glory Towers stands as a testament to our dedication to excellence, offering you a home that you'll be proud to call your own. We invite you to be part of this extraordinary journey."
               </p>
               
               <div className="pt-6 border-t border-white/30 mt-8">
-                <p className="text-xl text-white/80">Chairman & Managing Director</p>
+                <p className="text-xl text-black/80">Chairman & Managing Director</p>
               </div>
             </div>
           </motion.div>

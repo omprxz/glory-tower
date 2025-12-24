@@ -20,26 +20,26 @@ export default function Navbar() {
         animate={{ y: 0 }}
         className="fixed top-0 left-0 right-0 z-50"
       >
-        <div className="container mx-auto px-4 py-3 flex items-center justify-between bg-gradient-to-b from-golden2/50 to-transparent">
-          <Link to="/" className="flex items-center z-50" onClick={handleLinkClick}>
+        <div className="container mx-auto px-4 py-3 flex items-center justify-between bg-white/60">
+          <a href="/" className="flex items-center z-50" onClick={handleLinkClick}>
             <img src="/logo.png" alt="The Glory Towers" className="h-20 md:h-24 w-auto" />
-          </Link>
+          </a>
           
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center gap-6 xl:gap-8">
-            <Link to="/" className="text-white font-semibold hover:text-golden transition text-sm xl:text-base">
+            <a href="/" className="text-black font-semibold hover:text-golden transition text-sm xl:text-base">
               HOME
-            </Link>
-            <a href="#why-us" className="text-white font-semibold hover:text-golden transition text-sm xl:text-base">
+            </a>
+            <a href="#why-us" className="text-black font-semibold hover:text-golden transition text-sm xl:text-base">
               WHY US
             </a>
-            <a href="https://malhotraproperties.in/the-glory-tower" target="_blank" rel="noopener noreferrer" className="text-white font-semibold hover:text-golden transition text-sm xl:text-base">
+            <a href="https://malhotraproperties.in/the-glory-tower" target="_blank" rel="noopener noreferrer" className="text-black font-semibold hover:text-golden transition text-sm xl:text-base">
               PROJECT
             </a>
-            <Link to="/download-brochure" className="text-white font-semibold hover:text-golden transition text-sm xl:text-base">
+            <a href="/download-brochure" className="text-black font-semibold hover:text-golden transition text-sm xl:text-base">
               DOWNLOAD BROCHURE
-            </Link>
-            <a href="/#latest-posts" className="text-white font-semibold hover:text-golden transition text-sm xl:text-base">
+            </a>
+            <a href="/#latest-posts" className="text-black font-semibold hover:text-golden transition text-sm xl:text-base">
               BLOGS
             </a>
             
@@ -73,16 +73,16 @@ export default function Navbar() {
               className="lg:hidden bg-primary/98 backdrop-blur-md"
             >
               <div className="container mx-auto px-4 py-6 flex flex-col gap-4">
-                <Link 
-                  to="/" 
-                  className="text-white font-semibold hover:text-golden transition py-2 border-b border-white/10"
+                <a 
+                  href="/" 
+                  className="text-black font-semibold hover:text-golden transition py-2 border-b border-white/10"
                   onClick={handleLinkClick}
                 >
                   HOME
-                </Link>
+                </a>
                 <a 
                   href="#why-us" 
-                  className="text-white font-semibold hover:text-golden transition py-2 border-b border-white/10"
+                  className="text-black font-semibold hover:text-golden transition py-2 border-b border-white/10"
                   onClick={handleLinkClick}
                 >
                   WHY US
@@ -90,21 +90,21 @@ export default function Navbar() {
                 <a 
                   href="https://malhotraproperties.in/the-glory-tower" 
                   target="_blank" rel="noopener noreferrer"
-                  className="text-white font-semibold hover:text-golden transition py-2 border-b border-white/10"
+                  className="text-black font-semibold hover:text-golden transition py-2 border-b border-white/10"
                   onClick={handleLinkClick}
                 >
                   PROJECT
                 </a>
-                <Link 
-                  to="/download-brochure" 
-                  className="text-white font-semibold hover:text-golden transition py-2 border-b border-white/10"
+                <a 
+                  href="/download-brochure" 
+                  className="text-black font-semibold hover:text-golden transition py-2 border-b border-white/10"
                   onClick={handleLinkClick}
                 >
                   DOWNLOAD BROCHURE
-                </Link>
+                </a>
                 <a 
                   href="/#latest-posts" 
-                  className="text-white font-semibold hover:text-golden transition py-2 border-b border-white/10"
+                  className="text-black font-semibold hover:text-golden transition py-2 border-b border-white/10"
                   onClick={handleLinkClick}
                 >
                   BLOGS

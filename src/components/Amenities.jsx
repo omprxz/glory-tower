@@ -44,7 +44,7 @@ export default function Amenities() {
             WORLD-CLASS AMENITIES
           </h2>
           <div className="h-1 w-32 bg-golden mx-auto mb-6" />
-          <p className="text-xl text-white max-w-3xl mx-auto">
+          <p className="text-xl text-black max-w-3xl mx-auto">
             Enjoy a lifestyle of comfort and convenience with our premium facilities
           </p>
         </motion.div>
@@ -58,7 +58,7 @@ export default function Amenities() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
               whileHover={{ y: -10 }}
-              className="bg-primary/50 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all text-white text-center border-2 border-golden"
+              className="bg-primary/50 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all text-black text-center border-2 border-golden"
             >
               <div className="text-6xl mb-4 text-golden">
                 <FontAwesomeIcon icon={amenity.icon} />
@@ -66,7 +66,7 @@ export default function Amenities() {
               <h3 className="text-2xl font-bold mb-3 text-golden">
                 {amenity.title}
               </h3>
-              <p className="text-white/90 leading-relaxed">
+              <p className="text-black/90 leading-relaxed">
                 {amenity.description}
               </p>
             </motion.div>

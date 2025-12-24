@@ -40,36 +40,36 @@ export default function DownloadBrochure() {
             {!success ? (
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label className="block text-white font-semibold mb-2">Name *</label>
+                  <label className="block text-black font-semibold mb-2">Name *</label>
                   <input
                     type="text"
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border-2 border-golden bg-primary text-white rounded-xl focus:border-golden focus:outline-none transition"
+                    className="w-full px-4 py-3 border-2 border-golden bg-primary text-black rounded-xl focus:border-golden focus:outline-none transition"
                   />
                 </div>
                 <div>
-                  <label className="block text-white font-semibold mb-2">Phone Number *</label>
+                  <label className="block text-black font-semibold mb-2">Phone Number *</label>
                   <input
                     type="tel"
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border-2 border-golden bg-primary text-white rounded-xl focus:border-golden focus:outline-none transition"
+                    className="w-full px-4 py-3 border-2 border-golden bg-primary text-black rounded-xl focus:border-golden focus:outline-none transition"
                   />
                 </div>
                 <div>
-                  <label className="block text-white font-semibold mb-2">Your City *</label>
+                  <label className="block text-black font-semibold mb-2">Your City *</label>
                   <input
                     type="text"
                     name="city"
                     value={formData.city}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border-2 border-golden bg-primary text-white rounded-xl focus:border-golden focus:outline-none transition"
+                    className="w-full px-4 py-3 border-2 border-golden bg-primary text-black rounded-xl focus:border-golden focus:outline-none transition"
                   />
                 </div>
                 <motion.button
@@ -84,7 +84,7 @@ export default function DownloadBrochure() {
             ) : (
               <div className="text-center py-12">
                 <h2 className="text-2xl font-bold text-golden mb-4">Thank you!</h2>
-                <p className="text-white/90">We have received your request.<br />Our team will send you the brochure soon.</p>
+                <p className="text-black/90">We have received your request.<br />Our team will send you the brochure soon.</p>
               </div>
             )}
           </div>

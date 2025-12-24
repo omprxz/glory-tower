@@ -31,7 +31,7 @@ export default function LocationMerits() {
             LOCATION MERITS
           </h2>
           <div className="h-1 w-32 bg-golden mx-auto mb-6" />
-          <p className="text-xl text-white max-w-3xl mx-auto">
+          <p className="text-xl text-black max-w-3xl mx-auto">
             Strategically located with unmatched connectivity to all key landmarks
           </p>
         </motion.div>
@@ -55,7 +55,7 @@ export default function LocationMerits() {
                   )}
                 </div>
                 <div className="flex-1">
-                  <p className="text-white leading-relaxed">
+                  <p className="text-black leading-relaxed">
                     {location.text}
                   </p>
                   {location.time && (

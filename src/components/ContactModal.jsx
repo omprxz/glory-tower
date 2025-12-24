@@ -36,7 +36,7 @@ export default function ContactModal({ isOpen, onClose, buttonLabel = 'GET A CAL
               <div className="flex justify-between items-start mb-2">
                 <div>
                   <h3 className="text-3xl font-bold text-golden mb-1">Request a Callback</h3>
-                  <p className="text-white/80 text-sm">We are here to help you</p>
+                  <p className="text-black/80 text-sm">We are here to help you</p>
                 </div>
                 <button
                   onClick={onClose}
@@ -48,7 +48,7 @@ export default function ContactModal({ isOpen, onClose, buttonLabel = 'GET A CAL
               
               <form onSubmit={handleSubmit} className="space-y-4 mt-6">
                 <div>
-                  <label className="block text-white font-semibold mb-2">
+                  <label className="block text-black font-semibold mb-2">
                     Name *
                   </label>
                   <input
@@ -56,12 +56,12 @@ export default function ContactModal({ isOpen, onClose, buttonLabel = 'GET A CAL
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     required
-                    className="w-full px-4 py-3 border-2 border-golden bg-primary text-white rounded-xl focus:border-golden focus:outline-none transition"
+                    className="w-full px-4 py-3 border-2 border-golden bg-primary text-black rounded-xl focus:border-golden focus:outline-none transition"
                   />
                 </div>
                 
                 <div>
-                  <label className="block text-white font-semibold mb-2">
+                  <label className="block text-black font-semibold mb-2">
                     Phone Number *
                   </label>
                   <input
@@ -69,12 +69,12 @@ export default function ContactModal({ isOpen, onClose, buttonLabel = 'GET A CAL
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     required
-                    className="w-full px-4 py-3 border-2 border-golden bg-primary text-white rounded-xl focus:border-golden focus:outline-none transition"
+                    className="w-full px-4 py-3 border-2 border-golden bg-primary text-black rounded-xl focus:border-golden focus:outline-none transition"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-white font-semibold mb-2">
+                  <label className="block text-black font-semibold mb-2">
                     Your City *
                   </label>
                   <input
@@ -82,7 +82,7 @@ export default function ContactModal({ isOpen, onClose, buttonLabel = 'GET A CAL
                     value={formData.city}
                     onChange={(e) => setFormData({ ...formData, city: e.target.value })}
                     required
-                    className="w-full px-4 py-3 border-2 border-golden bg-primary text-white rounded-xl focus:border-golden focus:outline-none transition"
+                    className="w-full px-4 py-3 border-2 border-golden bg-primary text-black rounded-xl focus:border-golden focus:outline-none transition"
                   />
                 </div>
                 

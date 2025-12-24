@@ -8,7 +8,7 @@ export default function About() {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative h-[60vh] bg-gradient-to-br from-primary via-secondary to-tertiary flex items-center justify-center text-white overflow-hidden">
+      <section className="relative h-[60vh] bg-gradient-to-br from-primary via-secondary to-tertiary flex items-center justify-center text-black overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-20 w-64 h-64 bg-white rounded-full blur-3xl" />
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-white rounded-full blur-3xl" />
@@ -32,7 +32,7 @@ export default function About() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="space-y-8 text-lg text-white leading-relaxed"
+            className="space-y-8 text-lg text-black leading-relaxed"
           >
             <div>
               <h2 className="text-4xl font-bold text-golden mb-6">Our Vision</h2>

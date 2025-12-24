@@ -43,12 +43,12 @@ export default function Home() {
       <FAQ />
 
       {/* Latest Posts Section */}
-      <div className="container mx-auto px-4 py-16" id="latest-posts">
+      <div className="container mx-auto px-4 py-16 bg-white" id="latest-posts">
         <h2 className="text-6xl font-extrabold mb-12 text-center bg-gradient-to-r from-golden3 via-golden2 to-golden bg-clip-text text-transparent">
           Latest Posts
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <a href="/post-showcase" className="bg-primary rounded-2xl shadow-lg overflow-hidden block transition-transform">
+          <a href="/post-showcase" className="bg-gradient-to-br from-gray-500 to-gray-700 rounded-2xl shadow-lg overflow-hidden block transition-transform">
             <img src="/project/showcase.png" alt="Showcase" className="w-full h-56 object-cover" />
             <div className="p-6">
               <h3 className="text-3xl font-bold text-golden mb-4">Project Showcase</h3>
@@ -56,7 +56,7 @@ export default function Home() {
               <a href="/post-showcase" className="inline-block mt-2 text-golden font-bold hover:underline">READ MORE</a>
             </div>
           </a>
-          <a href="/post-clubhouse" className="bg-primary rounded-2xl shadow-lg overflow-hidden block transition-transform">
+          <a href="/post-clubhouse" className="bg-gradient-to-br from-gray-500 to-gray-700 rounded-2xl shadow-lg overflow-hidden block transition-transform">
             <img src="/project/clubhouse.png" alt="Clubhouse" className="w-full h-56 object-cover" />
             <div className="p-6">
               <h3 className="text-3xl font-bold text-golden mb-4">Clubhouse Reveal</h3>
@@ -64,7 +64,7 @@ export default function Home() {
               <a href="/post-clubhouse" className="inline-block mt-2 text-golden font-bold hover:underline">READ MORE</a>
             </div>
           </a>
-          <a href="/post-bedroom" className="bg-primary rounded-2xl shadow-lg overflow-hidden block transition-transform">
+          <a href="/post-bedroom" className="bg-gradient-to-br from-gray-500 to-gray-700 rounded-2xl shadow-lg overflow-hidden block transition-transform">
             <img src="/project/bedroom.png" alt="Bedroom" className="w-full h-56 object-cover" />
             <div className="p-6">
               <h3 className="text-3xl font-bold text-golden mb-4">Premium Bedrooms</h3>

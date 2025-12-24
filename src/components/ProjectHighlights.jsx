@@ -48,7 +48,7 @@ export default function ProjectHighlights() {
             PROJECT HIGHLIGHTS
           </h2>
           <div className="h-1 w-32 bg-golden mx-auto mb-6" />
-          <p className="text-xl text-white max-w-3xl mx-auto">
+          <p className="text-xl text-black max-w-3xl mx-auto">
             Experience excellence in every detail with world-class construction and premium amenities
           </p>
         </motion.div>
@@ -66,7 +66,7 @@ export default function ProjectHighlights() {
               <div className="text-2xl text-golden flex-shrink-0 mt-1">
                 <FontAwesomeIcon icon={highlight.icon} />
               </div>
-              <p className="text-white leading-relaxed">
+              <p className="text-black leading-relaxed">
                 {highlight.text}
               </p>
             </motion.div>

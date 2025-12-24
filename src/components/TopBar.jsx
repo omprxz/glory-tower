@@ -4,7 +4,7 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons'
 
 export default function TopBar() {
   return (
-    <div className="fixed top-0 left-0 right-0 z-[60] bg-primary text-white py-2 border-b-2 border-golden">
+    <div className="fixed top-0 left-0 right-0 z-[60] bg-primary text-black py-2 border-b-2 border-golden">
       <div className="container mx-auto px-4 flex items-center justify-end text-sm">
         <motion.a
           href="tel:+917888593861"

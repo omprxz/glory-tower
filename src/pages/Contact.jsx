@@ -11,7 +11,7 @@ export default function Contact() {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative h-[60vh] bg-gradient-to-br from-primary via-secondary to-tertiary flex items-center justify-center text-white overflow-hidden">
+      <section className="relative h-[60vh] bg-gradient-to-br from-primary via-secondary to-tertiary flex items-center justify-center text-black overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-20 w-64 h-64 bg-white rounded-full blur-3xl" />
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-white rounded-full blur-3xl" />
@@ -43,7 +43,7 @@ export default function Contact() {
                 <FontAwesomeIcon icon={faLocationDot} />
               </div>
               <h3 className="text-2xl font-bold text-golden mb-3">Visit Us</h3>
-              <p className="text-white">
+              <p className="text-black">
                 The Glory Towers<br />
                 Adjoining gurudwara shri nabha sahib, patiala road, zirkpur, 140603<br />
                 Business District
@@ -61,7 +61,7 @@ export default function Contact() {
                 <FontAwesomeIcon icon={faPhone} />
               </div>
               <h3 className="text-2xl font-bold text-golden mb-3">Call Us</h3>
-              <p className="text-white">
+              <p className="text-black">
                 +91 7888593861<br />
                 +91 7888593861<br />
                 Mon - Sat: 9 AM - 7 PM
@@ -79,7 +79,7 @@ export default function Contact() {
                 <FontAwesomeIcon icon={faEnvelope} />
               </div>
               <h3 className="text-2xl font-bold text-golden mb-3">Email Us</h3>
-              <p className="text-white">
+              <p className="text-black">
                 info@glorytowers.com<br />
               </p>
             </motion.div>

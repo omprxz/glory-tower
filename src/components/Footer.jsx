@@ -21,7 +21,7 @@ export default function Footer() {
   }
 
   return (
-    <footer className="bg-gradient-to-r from-primary via-secondary to-tertiary text-white">
+    <footer className="bg-gradient-to-r from-primary2 via-secondary2 to-tertiary2 text-white">
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Logo & Description */}
@@ -69,13 +69,13 @@ export default function Footer() {
                         → {link.name}
                       </a>
                     ) : (
-                      <Link
-                        to={link.path}
+                      <a
+                        href={link.path}
                         onClick={scrollToTop}
                         className="text-white/80 hover:text-white transition-colors inline-block hover:translate-x-2 transform duration-200"
                       >
                         → {link.name}
-                      </Link>
+                      </a>
                     )}
                   </li>
                 ))}
@@ -95,21 +95,21 @@ export default function Footer() {
               <div className="flex gap-4">
                 <a
                   href="#"
-                  className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center hover:bg-white hover:text-primary transition-all transform hover:scale-110"
+                  className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center hover:bg-white hover:text-primary2 transition-all transform hover:scale-110"
                   aria-label="Facebook"
                 >
                   <FontAwesomeIcon icon={faFacebookF} className="text-2xl" />
                 </a>
                 <a
                   href="#"
-                  className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center hover:bg-white hover:text-primary transition-all transform hover:scale-110"
+                  className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center hover:bg-white hover:text-primary2 transition-all transform hover:scale-110"
                   aria-label="Instagram"
                 >
                   <FontAwesomeIcon icon={faInstagram} className="text-2xl" />
                 </a>
                 <a
                   href="#"
-                  className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center hover:bg-white hover:text-primary transition-all transform hover:scale-110"
+                  className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center hover:bg-white hover:text-primary2 transition-all transform hover:scale-110"
                   aria-label="YouTube"
                 >
                   <FontAwesomeIcon icon={faYoutube} className="text-2xl" />
@@ -124,7 +124,7 @@ export default function Footer() {
                     placeholder="Your email"
                     className="flex-1 px-4 py-2 rounded-lg bg-white/20 border border-white/30 focus:outline-none focus:border-white text-white placeholder-white/60"
                   />
-                  <button className="px-6 py-2 bg-white text-primary rounded-lg font-semibold hover:bg-white/90 transition-colors">
+                  <button className="px-6 py-2 bg-white text-primary2 rounded-lg font-semibold hover:bg-white/90 transition-colors">
                     →
                   </button>
                 </div>

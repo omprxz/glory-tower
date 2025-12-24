@@ -91,7 +91,7 @@ function ProjectViewCard({ view, index }) {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="bg-gradient-to-br from-primary via-secondary to-tertiary p-8 lg:p-12 rounded-3xl shadow-xl border-2 border-golden/30"
+          className="bg-gradient-to-br from-gray-500 to-gray-700 p-8 lg:p-12 rounded-3xl shadow-xl border-2 border-golden/30"
         >
           <div className="bg-gradient-to-r from-golden3 via-golden2 to-golden bg-clip-text">
             <h3 className="text-5xl lg:text-7xl font-bold mb-4 leading-tight text-transparent">
