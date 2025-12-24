@@ -19,7 +19,7 @@ const locations = [
 
 export default function LocationMerits() {
   return (
-    <section className="py-20 bg-gradient-to-br from-primary to-secondary">
+    <section className="py-20 bg-gradient-to-br from-primary via-secondary to-tertiary">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -27,11 +27,11 @@ export default function LocationMerits() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-6xl font-bold text-white mb-4">
+          <h2 className="text-6xl font-bold text-golden mb-4">
             LOCATION MERITS
           </h2>
-          <div className="h-1 w-32 bg-white mx-auto mb-6" />
-          <p className="text-xl text-white/90 max-w-3xl mx-auto">
+          <div className="h-1 w-32 bg-golden mx-auto mb-6" />
+          <p className="text-xl text-white max-w-3xl mx-auto">
             Strategically located with unmatched connectivity to all key landmarks
           </p>
         </motion.div>
@@ -44,10 +44,10 @@ export default function LocationMerits() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.05 }}
-              className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20 hover:bg-white/20 transition-all"
+              className="bg-primary/50 backdrop-blur-sm p-6 rounded-xl border-2 border-golden hover:bg-primary/70 transition-all"
             >
               <div className="flex items-start gap-4">
-                <div className="text-2xl text-white flex-shrink-0 mt-1">
+                <div className="text-2xl text-golden flex-shrink-0 mt-1">
                   {location.time ? (
                     <FontAwesomeIcon icon={faClock} />
                   ) : (
@@ -59,7 +59,7 @@ export default function LocationMerits() {
                     {location.text}
                   </p>
                   {location.time && (
-                    <span className="inline-block mt-2 px-3 py-1 bg-white/20 rounded-full text-white text-sm font-semibold">
+                    <span className="inline-block mt-2 px-3 py-1 bg-golden/20 rounded-full text-golden text-sm font-semibold">
                       {location.time}
                     </span>
                   )}

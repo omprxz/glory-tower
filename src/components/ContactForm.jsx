@@ -3,10 +3,9 @@ import { useState } from 'react'
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
+    name: '',
     phone: '',
-    budget: ''
+    city: ''
   })
 
   const handleSubmit = (e) => {
@@ -23,7 +22,7 @@ export default function ContactForm() {
   }
 
   return (
-    <section id="contact" className="py-20 bg-gray-50">
+    <section id="contact" className="py-20 bg-gradient-to-br from-primary via-secondary to-tertiary">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -31,11 +30,11 @@ export default function ContactForm() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-6xl font-bold text-primary mb-4">
+          <h2 className="text-6xl font-bold text-golden mb-4">
             GET IN TOUCH
           </h2>
-          <div className="h-1 w-32 bg-secondary mx-auto mb-6" />
-          <p className="text-xl text-gray-600">
+          <div className="h-1 w-32 bg-golden mx-auto mb-6" />
+          <p className="text-xl text-white">
             Register your interest and our team will get back to you shortly
           </p>
         </motion.div>
@@ -48,41 +47,23 @@ export default function ContactForm() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <form onSubmit={handleSubmit} className="bg-white p-8 rounded-3xl shadow-xl space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-gray-700 font-semibold mb-2">
-                    First Name *
-                  </label>
-                  <input
-                    type="text"
-                    name="firstName"
-                    value={formData.firstName}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-primary focus:outline-none transition"
-                    placeholder="John"
-                  />
-                </div>
-                
-                <div>
-                  <label className="block text-gray-700 font-semibold mb-2">
-                    Last Name *
-                  </label>
-                  <input
-                    type="text"
-                    name="lastName"
-                    value={formData.lastName}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-primary focus:outline-none transition"
-                    placeholder="Doe"
-                  />
-                </div>
+            <form onSubmit={handleSubmit} className="bg-primary/50 p-8 rounded-3xl shadow-xl space-y-6 border-2 border-golden">
+              <div>
+                <label className="block text-white font-semibold mb-2">
+                  Name *
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-4 py-3 border-2 border-golden bg-primary text-white rounded-xl focus:border-golden focus:outline-none transition"
+                />
               </div>
               
               <div>
-                <label className="block text-gray-700 font-semibold mb-2">
+                <label className="block text-white font-semibold mb-2">
                   Phone Number *
                 </label>
                 <input
@@ -91,37 +72,31 @@ export default function ContactForm() {
                   value={formData.phone}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-primary focus:outline-none transition"
-                  placeholder="+971 50 123 4567"
+                  className="w-full px-4 py-3 border-2 border-golden bg-primary text-white rounded-xl focus:border-golden focus:outline-none transition"
                 />
               </div>
               
               <div>
-                <label className="block text-gray-700 font-semibold mb-2">
-                  Budget Range *
+                <label className="block text-white font-semibold mb-2">
+                  Your City *
                 </label>
-                <select
-                  name="budget"
-                  value={formData.budget}
+                <input
+                  type="text"
+                  name="city"
+                  value={formData.city}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-primary focus:outline-none transition bg-white"
-                >
-                  <option value="">Select your budget</option>
-                  <option value="1-2">AED 1M - 2M</option>
-                  <option value="2-3">AED 2M - 3M</option>
-                  <option value="3-5">AED 3M - 5M</option>
-                  <option value="5+">AED 5M+</option>
-                </select>
+                  className="w-full px-4 py-3 border-2 border-golden bg-primary text-white rounded-xl focus:border-golden focus:outline-none transition"
+                />
               </div>
               
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 type="submit"
-                className="w-full bg-gradient-to-r from-primary to-secondary text-white py-4 rounded-xl font-bold text-lg tracking-wider shadow-lg hover:shadow-xl transition-all"
+                className="w-full bg-gradient-to-r from-golden3 via-golden2 to-golden text-primary py-4 rounded-xl font-bold text-lg tracking-wider shadow-lg hover:shadow-xl transition-all"
               >
-                SUBMIT INQUIRY
+                GET A CALLBACK
               </motion.button>
             </form>
           </motion.div>
@@ -136,7 +111,7 @@ export default function ContactForm() {
           >
             <div className="rounded-3xl overflow-hidden shadow-2xl h-full">
               <img 
-                src="/project/file_00000000ea007208b89befdd1aa304cf.png" 
+                src="/project/showcase.png" 
                 alt="Contact"
                 className="w-full h-full object-cover"
               />

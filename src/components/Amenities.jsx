@@ -32,7 +32,7 @@ const amenities = [
 
 export default function Amenities() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gradient-to-br from-primary via-secondary to-tertiary">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -40,11 +40,11 @@ export default function Amenities() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-6xl font-bold text-primary mb-4">
+          <h2 className="text-6xl font-bold text-golden mb-4">
             WORLD-CLASS AMENITIES
           </h2>
-          <div className="h-1 w-32 bg-secondary mx-auto mb-6" />
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <div className="h-1 w-32 bg-golden mx-auto mb-6" />
+          <p className="text-xl text-white max-w-3xl mx-auto">
             Enjoy a lifestyle of comfort and convenience with our premium facilities
           </p>
         </motion.div>
@@ -58,12 +58,12 @@ export default function Amenities() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
               whileHover={{ y: -10 }}
-              className="bg-gradient-to-br from-primary to-secondary p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all text-white text-center"
+              className="bg-primary/50 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all text-white text-center border-2 border-golden"
             >
-              <div className="text-6xl mb-4">
+              <div className="text-6xl mb-4 text-golden">
                 <FontAwesomeIcon icon={amenity.icon} />
               </div>
-              <h3 className="text-2xl font-bold mb-3">
+              <h3 className="text-2xl font-bold mb-3 text-golden">
                 {amenity.title}
               </h3>
               <p className="text-white/90 leading-relaxed">

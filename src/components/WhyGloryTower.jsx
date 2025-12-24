@@ -37,7 +37,7 @@ const features = [
 
 export default function WhyGloryTower() {
   return (
-    <section id="why-us" className="py-20 bg-white">
+    <section id="why-us" className="py-20 bg-gradient-to-br from-primary via-secondary to-tertiary">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -45,12 +45,12 @@ export default function WhyGloryTower() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-6xl font-bold text-primary mb-4">
-            WHY THE GLORY TOWER
+          <h2 className="text-6xl font-bold text-golden mb-4">
+            WHY THE GLORY TOWERS
           </h2>
-          <div className="h-1 w-32 bg-secondary mx-auto mb-6" />
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Discover the perfect blend of luxury, comfort, and convenience that makes Glory Tower the ideal choice for your dream home.
+          <div className="h-1 w-32 bg-golden mx-auto mb-6" />
+          <p className="text-xl text-white max-w-3xl mx-auto">
+            Discover the perfect blend of luxury, comfort, and convenience that makes The Glory Towers the ideal choice for your dream home.
           </p>
         </motion.div>
         
@@ -63,15 +63,15 @@ export default function WhyGloryTower() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
               whileHover={{ y: -10, scale: 1.02 }}
-              className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all border border-gray-100"
+              className="bg-primary/50 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all border-2 border-golden"
             >
-              <div className="text-6xl mb-4 text-primary">
+              <div className="text-6xl mb-4 text-golden">
                 <FontAwesomeIcon icon={feature.icon} />
               </div>
-              <h3 className="text-2xl font-bold text-primary mb-3">
+              <h3 className="text-2xl font-bold text-golden mb-3">
                 {feature.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-white leading-relaxed">
                 {feature.description}
               </p>
             </motion.div>

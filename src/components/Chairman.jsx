@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 
 export default function Chairman() {
   return (
-    <section className="py-20 bg-gradient-to-br from-primary to-secondary">
+    <section className="py-20 bg-gradient-to-br from-primary via-secondary to-tertiary">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           {/* Image Side */}
@@ -15,7 +15,7 @@ export default function Chairman() {
           >
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img 
-                src="/project/DP_The_Glory.jpg" 
+                src="/project/kitchen.png" 
                 alt="Chairman"
                 className="w-full h-[600px] object-cover"
               />
@@ -38,15 +38,15 @@ export default function Chairman() {
                 initial={{ scaleX: 0 }}
                 whileInView={{ scaleX: 1 }}
                 viewport={{ once: true }}
-                className="h-1 w-20 bg-white mb-6"
+                className="h-1 w-20 bg-golden mb-6"
               />
-              <h2 className="text-5xl font-bold mb-3">Message from</h2>
-              <h3 className="text-6xl font-bold mb-6">THE CHAIRMAN</h3>
+              <h2 className="text-5xl font-bold mb-3 text-golden">Message from</h2>
+              <h3 className="text-6xl font-bold mb-6 text-golden">CHAIRMAN</h3>
             </div>
             
             <div className="space-y-6 text-lg leading-relaxed">
               <p className="text-white/90">
-                "Welcome to Glory Tower, where luxury meets lifestyle. Our vision is to create not just apartments, but homes that inspire and elevate your everyday living experience."
+                "Welcome to The Glory Towers, where luxury meets lifestyle. Our vision is to create not just apartments, but homes that inspire and elevate your everyday living experience."
               </p>
               
               <p className="text-white/90">
@@ -54,11 +54,10 @@ export default function Chairman() {
               </p>
               
               <p className="text-white/90">
-                "Glory Tower stands as a testament to our dedication to excellence, offering you a home that you'll be proud to call your own. We invite you to be part of this extraordinary journey."
+                "The Glory Towers stands as a testament to our dedication to excellence, offering you a home that you'll be proud to call your own. We invite you to be part of this extraordinary journey."
               </p>
               
               <div className="pt-6 border-t border-white/30 mt-8">
-                <p className="text-2xl font-bold">Mr. Abdullah Khan</p>
                 <p className="text-xl text-white/80">Chairman & Managing Director</p>
               </div>
             </div>

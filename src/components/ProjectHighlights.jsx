@@ -36,7 +36,7 @@ const highlights = [
 
 export default function ProjectHighlights() {
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
+    <section className="py-20 bg-gradient-to-br from-primary via-secondary to-tertiary">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -44,11 +44,11 @@ export default function ProjectHighlights() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-6xl font-bold text-primary mb-4">
+          <h2 className="text-6xl font-bold text-golden mb-4">
             PROJECT HIGHLIGHTS
           </h2>
-          <div className="h-1 w-32 bg-secondary mx-auto mb-6" />
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <div className="h-1 w-32 bg-golden mx-auto mb-6" />
+          <p className="text-xl text-white max-w-3xl mx-auto">
             Experience excellence in every detail with world-class construction and premium amenities
           </p>
         </motion.div>
@@ -61,12 +61,12 @@ export default function ProjectHighlights() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.05 }}
-              className="flex items-start gap-4 bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all"
+              className="flex items-start gap-4 bg-primary/50 p-6 rounded-xl shadow-md hover:shadow-lg transition-all border-2 border-golden"
             >
-              <div className="text-2xl text-secondary flex-shrink-0 mt-1">
+              <div className="text-2xl text-golden flex-shrink-0 mt-1">
                 <FontAwesomeIcon icon={highlight.icon} />
               </div>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-white leading-relaxed">
                 {highlight.text}
               </p>
             </motion.div>
