@@ -32,7 +32,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
-          className="text-center"
+          className="text-center bg-black/30 backdrop-blur-md px-12 py-10 rounded-3xl"
         >
           {/* Top Line */}
           <div className="mb-8">

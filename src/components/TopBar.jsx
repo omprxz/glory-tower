@@ -18,14 +18,7 @@ export default function TopBar() {
   return (
     <>
       <div className="fixed top-0 left-0 right-0 z-[60] bg-gradient-to-r from-primary to-secondary text-white py-2">
-        <div className="container mx-auto px-4 flex items-center justify-between text-sm">
-          <div className="flex items-center gap-6">
-            <a href="tel:+971501234567" className="flex items-center gap-2 hover:opacity-80 transition">
-              <FontAwesomeIcon icon={faPhone} className="text-white" />
-              <span className="font-semibold">+971 50 123 4567</span>
-            </a>
-          </div>
-          
+        <div className="container mx-auto px-4 flex items-center justify-end text-sm">
           <motion.button
             onClick={() => setIsOpen(true)}
             whileHover={{ scale: 1.05 }}
