@@ -48,6 +48,9 @@ export default function Contact() {
                 Adjoining gurudwara shri nabha sahib, patiala road, zirkpur, 140603<br />
                 Business District
               </p>
+              <div className="mt-4 pt-3 border-t border-golden/30 text-xs font-semibold text-golden">
+                RERA Registered: PBRERA-SAS79-PR1455-112026
+              </div>
             </motion.div>
             
             <motion.div

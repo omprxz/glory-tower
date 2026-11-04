@@ -5,7 +5,6 @@ import Contact from './pages/Contact'
 import PostShowcase from './pages/PostShowcase'
 import PostClubhouse from './pages/PostClubhouse'
 import PostBedroom from './pages/PostBedroom'
-import DownloadBrochure from './pages/DownloadBrochure'
 
 export default function App() {
   return (
@@ -16,7 +15,6 @@ export default function App() {
       <Route path="/post-showcase" element={<PostShowcase />} />
       <Route path="/post-clubhouse" element={<PostClubhouse />} />
       <Route path="/post-bedroom" element={<PostBedroom />} />
-      <Route path="/download-brochure" element={<DownloadBrochure />} />
     </Routes>
   )
 }

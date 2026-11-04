@@ -64,6 +64,7 @@ export default function About() {
                 <li>Over 20 years of experience in luxury real estate development</li>
                 <li>Award-winning architectural and interior design</li>
                 <li>Commitment to sustainable and eco-friendly practices</li>
+                <li>RERA Registered: PBRERA-SAS79-PR1455-112026 ensuring complete transparency and peace of mind</li>
                 <li>Strategic location with excellent connectivity</li>
                 <li>Transparent pricing and flexible payment plans</li>
                 <li>Timely project delivery with quality assurance</li>

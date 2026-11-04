@@ -24,6 +24,10 @@ const faqs = [
     question: 'What is the location advantage and connectivity of The Glory Towers?',
     answer: 'The Glory Towers is strategically located in a prime area with excellent connectivity to major business districts, educational institutions, healthcare facilities, and entertainment hubs. The property offers easy access to major highways, metro stations, and airports. The neighborhood is rapidly developing with shopping malls, restaurants, and recreational facilities within close proximity, making it an ideal location for both living and investment.'
   },
+  {
+    question: 'Is The Glory Towers RERA registered?',
+    answer: 'Yes, The Glory Towers is RERA Registered under registration number PBRERA-SAS79-PR1455-112026. All statutory clearances, sanctions, and regulatory approvals are completely in place.'
+  },
 ]
 
 function FAQItem({ faq, index, isOpen, onToggle }) {

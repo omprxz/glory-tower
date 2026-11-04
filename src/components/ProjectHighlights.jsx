@@ -31,7 +31,7 @@ const highlights = [
   { icon: faUtensils, text: 'Designer Modular Kitchen & Premium Bathrooms' },
   { icon: faTree, text: 'Landscaped Terrace Garden & Outdoor Seating' },
   { icon: faTint, text: 'Rainwater Harvesting & Eco-Friendly Features' },
-  { icon: faCheckCircle, text: 'RERA Approved with All Legal Clearances' },
+  { icon: faCheckCircle, text: 'RERA Registered: PBRERA-SAS79-PR1455-112026' },
 ]
 
 export default function ProjectHighlights() {
