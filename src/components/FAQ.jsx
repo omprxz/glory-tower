@@ -6,7 +6,7 @@ import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
 const faqs = [
   {
     question: 'What are the apartment configurations available at The Glory Towers?',
-    answer: 'The Glory Towers offers luxury 3 BHK apartments with configuration 1,950 sq.ft. Each unit features spacious layouts, premium finishes, and modern amenities designed for comfortable living. We offer multiple floor plan options to suit different lifestyle preferences and family sizes.'
+    answer: 'The Glory Towers offers luxury 3 BHK apartments with a spacious configuration of 1,950 sq.ft. The architectural design features only 4 apartments per floor with an 8-ft wide central corridor and 3 high-speed elevators. Each apartment is an independent corner home with 3-side open ventilation, 3 bedrooms, 3 attached/en-suite bathrooms, a dedicated puja/store room, and 3 expansive 6-ft wide balconies.'
   },
   {
     question: 'What amenities are included in the The Glory Towers project?',

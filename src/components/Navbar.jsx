@@ -75,6 +75,9 @@ export default function Navbar() {
             <a href="https://malhotraproperties.in/the-glory-tower" target="_blank" rel="noopener noreferrer" className="text-black font-semibold hover:text-golden transition text-sm xl:text-base">
               PROJECT
             </a>
+            <a href="/#floor-plans" className="text-black font-semibold hover:text-golden transition text-sm xl:text-base">
+              PLANS
+            </a>
             <button 
               onClick={openBrochureModal}
               className="text-black font-semibold hover:text-golden transition text-sm xl:text-base cursor-pointer"
@@ -142,6 +145,13 @@ export default function Navbar() {
                   onClick={handleLinkClick}
                 >
                   PROJECT
+                </a>
+                <a 
+                  href="/#floor-plans" 
+                  className="text-black font-semibold hover:text-golden transition py-2 border-b border-white/10"
+                  onClick={handleLinkClick}
+                >
+                  FLOOR & SITE PLANS
                 </a>
                 <button 
                   onClick={() => {

@@ -13,7 +13,7 @@ export default function Footer() {
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Why Us', path: '/#why-us' },
-    { name: 'Floor Plans', path: '/#floor-plans' },
+    { name: 'Floor Plans & Site Plans', path: '/#floor-plans' },
     { name: 'Download Brochure', onClick: () => setIsBrochureOpen(true) },
     { name: 'Contact', path: '/contact' },
     { name: 'Project Showcase', path: '/post-showcase' },

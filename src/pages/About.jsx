@@ -8,19 +8,14 @@ export default function About() {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative h-[60vh] bg-gradient-to-br from-primary via-secondary to-tertiary flex items-center justify-center text-black overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-20 w-64 h-64 bg-white rounded-full blur-3xl" />
-          <div className="absolute bottom-20 right-20 w-96 h-96 bg-white rounded-full blur-3xl" />
-        </div>
-        
+      <section className="relative h-[50vh] bg-gradient-to-br from-primary via-secondary to-tertiary flex items-center justify-center text-black overflow-hidden">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="text-center relative z-10"
         >
-          <h1 className="text-7xl font-bold mb-4 text-golden">ABOUT US</h1>
+          <h1 className="text-6xl lg:text-7xl font-bold mb-4 text-golden">ABOUT US</h1>
           <div className="h-1 w-32 bg-golden mx-auto" />
         </motion.div>
       </section>
@@ -32,43 +27,48 @@ export default function About() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="space-y-8 text-lg text-black leading-relaxed"
+            className="space-y-10 text-lg text-black leading-relaxed"
           >
             <div>
-              <h2 className="text-4xl font-bold text-golden mb-6">Our Vision</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-golden mb-4">The Glory Towers</h2>
               <p>
-                The Glory Towers represents a new era of luxury living, where architectural excellence meets modern lifestyle demands. Our vision is to create homes that are not just spaces to live in, but sanctuaries that inspire, comfort, and elevate everyday experiences.
+                A landmark premium residential development on Patiala Road, Zirakpur offering thoughtfully designed 3 BHK apartments across 3 acres with 3 high-rise towers and only 4 corner apartments per floor.
               </p>
             </div>
-            
-            <div>
-              <h2 className="text-4xl font-bold text-golden mb-6">Our Mission</h2>
-              <p>
-                We are committed to delivering exceptional quality, innovative design, and sustainable development practices. Every aspect of The Glory Towers has been meticulously planned to ensure that our residents enjoy the finest amenities, superior construction quality, and a lifestyle that exceeds expectations.
-              </p>
+
+            {/* Plans Showcase */}
+            <div className="grid md:grid-cols-2 gap-6 my-6">
+              <div className="bg-white/90 p-4 rounded-3xl border-2 border-golden/40 shadow-xl">
+                <h3 className="text-xl font-bold text-golden mb-2">Master Site Plan</h3>
+                <a href="/project/plan/site-plan.png" target="_blank" rel="noopener noreferrer" className="block rounded-2xl overflow-hidden bg-white">
+                  <img 
+                    src="/project/plan/site-plan.webp" 
+                    alt="Master Site Plan" 
+                    className="w-full h-72 object-contain bg-white"
+                  />
+                </a>
+              </div>
+
+              <div className="bg-white/90 p-4 rounded-3xl border-2 border-golden/40 shadow-xl">
+                <h3 className="text-xl font-bold text-golden mb-2">Typical Floor Plan</h3>
+                <a href="/project/plan/cluster-floor-plan.png" target="_blank" rel="noopener noreferrer" className="block rounded-2xl overflow-hidden bg-white">
+                  <img 
+                    src="/project/plan/cluster-floor-plan.webp" 
+                    alt="Typical Floor Plan" 
+                    className="w-full h-72 object-contain bg-white"
+                  />
+                </a>
+              </div>
             </div>
-            
+
             <div>
-              <h2 className="text-4xl font-bold text-golden mb-6">The Glory Towers Story</h2>
-              <p className="mb-4">
-                Conceived as a landmark project in the heart of the city, The Glory Towers stands as a testament to our commitment to excellence. With premium 3 BHK apartments designed by award-winning architects, we have created a living experience that combines luxury, comfort, and convenience.
-              </p>
-              <p>
-                Our development features world-class amenities including state-of-the-art fitness facilities, infinity pools, landscaped gardens, and smart home technology. Every detail has been thoughtfully considered to create a community where families can thrive and create lasting memories.
-              </p>
-            </div>
-            
-            <div>
-              <h2 className="text-4xl font-bold text-golden mb-6">Why Choose Us</h2>
-              <ul className="space-y-3 list-disc list-inside">
-                <li>Over 20 years of experience in luxury real estate development</li>
-                <li>Award-winning architectural and interior design</li>
-                <li>Commitment to sustainable and eco-friendly practices</li>
-                <li>RERA Registered: PBRERA-SAS79-PR1455-112026 ensuring complete transparency and peace of mind</li>
-                <li>Strategic location with excellent connectivity</li>
-                <li>Transparent pricing and flexible payment plans</li>
-                <li>Timely project delivery with quality assurance</li>
-                <li>Comprehensive after-sales service and support</li>
+              <h2 className="text-3xl md:text-4xl font-bold text-golden mb-4">Highlights</h2>
+              <ul className="space-y-2 list-disc list-inside">
+                <li>RERA Registered: PBRERA-SAS79-PR1455-112026</li>
+                <li>3 Towers on 3 Acres — All Sides Open</li>
+                <li>Only 4 Flats Per Floor — Every Flat is a Corner Unit</li>
+                <li>Spacious 1,950 Sq.ft 3 BHK Luxury Apartments</li>
+                <li>Prime Location on Patiala Road adjoining Gurudwara Shri Nabha Sahib</li>
               </ul>
             </div>
           </motion.div>
