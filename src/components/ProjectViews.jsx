@@ -4,7 +4,7 @@ const projectViews = [
   { 
     image: '/project/gt1.png', 
     label: 'The Glory Towers',
-    area: 'The Iconic Tower'
+    area: 'The Iconic Towers'
   },
   { 
     image: '/project/architecture.png', 

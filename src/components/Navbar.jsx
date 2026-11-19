@@ -29,7 +29,7 @@ export default function Navbar() {
       <motion.nav 
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        className="fixed top-0 left-0 right-0 z-50 shadow-sm"
+        className="fixed top-0 left-0 right-0 z-50 shadow-md bg-white"
       >
         {/* RERA Header Bar */}
         <div className="bg-white font-sans py-2 sm:py-2.5 px-4 border-b-2 border-golden/50 shadow-sm">
@@ -59,53 +59,55 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div className="container mx-auto px-4 py-3 flex items-center justify-between bg-white/60">
-          <a href="/" className="flex items-center z-50" onClick={handleLinkClick}>
-            <img src="/logo.png" alt="The Glory Towers" className="h-20 md:h-24 w-auto" />
-          </a>
-          
-          {/* Desktop Menu */}
-          <div className="hidden lg:flex items-center gap-6 xl:gap-8">
-            <a href="/" className="text-black font-semibold hover:text-golden transition text-sm xl:text-base">
-              HOME
-            </a>
-            <a href="#why-us" className="text-black font-semibold hover:text-golden transition text-sm xl:text-base">
-              WHY US
-            </a>
-            <a href="https://malhotraproperties.in/the-glory-tower" target="_blank" rel="noopener noreferrer" className="text-black font-semibold hover:text-golden transition text-sm xl:text-base">
-              PROJECT
-            </a>
-            <a href="/#floor-plans" className="text-black font-semibold hover:text-golden transition text-sm xl:text-base">
-              PLANS
-            </a>
-            <button 
-              onClick={openBrochureModal}
-              className="text-black font-semibold hover:text-golden transition text-sm xl:text-base cursor-pointer"
-            >
-              DOWNLOAD BROCHURE
-            </button>
-            <a href="/#latest-posts" className="text-black font-semibold hover:text-golden transition text-sm xl:text-base">
-              BLOGS
+        <div className="w-full bg-white border-b border-gray-100">
+          <div className="container mx-auto px-4 py-2 sm:py-3 flex items-center justify-between bg-white">
+            <a href="/" className="flex items-center z-50" onClick={handleLinkClick}>
+              <img src="/logo.png" alt="The Glory Towers" className="h-16 sm:h-20 md:h-24 w-auto" />
             </a>
             
-            <motion.button
-              onClick={openCallbackModal}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-gradient-to-r from-golden3 via-golden2 to-golden text-primary px-4 xl:px-6 py-2 rounded-none font-bold hover:shadow-lg transition text-sm xl:text-base cursor-pointer"
-            >
-              REQUEST CALLBACK
-            </motion.button>
-          </div>
+            {/* Desktop Menu */}
+            <div className="hidden lg:flex items-center gap-6 xl:gap-8">
+              <a href="/" className="text-black font-semibold hover:text-golden transition text-sm xl:text-base">
+                HOME
+              </a>
+              <a href="#why-us" className="text-black font-semibold hover:text-golden transition text-sm xl:text-base">
+                WHY US
+              </a>
+              <a href="https://malhotraproperties.in/the-glory-tower" target="_blank" rel="noopener noreferrer" className="text-black font-semibold hover:text-golden transition text-sm xl:text-base">
+                PROJECT
+              </a>
+              <a href="/#floor-plans" className="text-black font-semibold hover:text-golden transition text-sm xl:text-base">
+                PLANS
+              </a>
+              <button 
+                onClick={openBrochureModal}
+                className="text-black font-semibold hover:text-golden transition text-sm xl:text-base cursor-pointer"
+              >
+                DOWNLOAD BROCHURE
+              </button>
+              <a href="/#latest-posts" className="text-black font-semibold hover:text-golden transition text-sm xl:text-base">
+                BLOGS
+              </a>
+              
+              <motion.button
+                onClick={openCallbackModal}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-gradient-to-r from-golden3 via-golden2 to-golden text-primary px-4 xl:px-6 py-2 rounded-none font-bold hover:shadow-lg transition text-sm xl:text-base cursor-pointer"
+              >
+                REQUEST CALLBACK
+              </motion.button>
+            </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden flex items-center gap-2 bg-primary/90 text-golden text-lg px-4 py-2 rounded-md shadow font-bold z-50 border border-golden"
-          >
-            <span>Menu</span>
-            <FontAwesomeIcon icon={faBars} />
-          </button>
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="lg:hidden flex items-center gap-2 bg-primary/90 text-golden text-lg px-4 py-2 rounded-md shadow font-bold z-50 border border-golden"
+            >
+              <span>Menu</span>
+              <FontAwesomeIcon icon={faBars} />
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}
@@ -115,7 +117,7 @@ export default function Navbar() {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
-              className="lg:hidden bg-primary/98 backdrop-blur-md"
+              className="lg:hidden bg-white border-b border-gray-200 shadow-xl"
             >
               <div className="container mx-auto px-4 py-6 flex flex-col gap-4">
                 <div className="text-xs font-sans font-bold pb-2 border-b border-golden/30 flex items-center gap-2">
@@ -184,6 +186,9 @@ export default function Navbar() {
           )}
         </AnimatePresence>
       </motion.nav>
+
+      {/* Header spacer to prevent fixed solid white navbar from overlapping content */}
+      <div className="h-[108px] sm:h-[118px] md:h-[150px] w-full bg-white" />
 
       {/* Modal */}
       <ContactModal isOpen={isOpen} onClose={() => setIsOpen(false)} buttonLabel={modalLabel} />
