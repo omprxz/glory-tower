@@ -39,8 +39,8 @@ export default function Footer() {
             >
               <img 
                 src="/logo.png" 
-                alt="The Glory Towers" 
-                className="h-28 w-auto mb-6 brightness-0 invert"
+                alt="Glory Tower logo"
+                className="h-40 w-auto mb-6"
               />
               <p className="text-white/80 leading-relaxed mb-4 max-w-md">
                 Experience luxury living at its finest with The Glory Towers. Your dream home awaits in the heart of the city with world-class amenities and sophisticated design.

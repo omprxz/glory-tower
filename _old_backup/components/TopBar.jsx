@@ -23,7 +23,7 @@ export default function TopBar() {
           href="tel:+917888593861"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="bg-gradient-to-r from-golden3 via-golden2 to-golden text-primary2 px-4 py-1.5 rounded-full font-bold hover:shadow-lg transition flex items-center gap-2 text-xs sm:text-sm"
+          className="bg-gradient-to-r from-golden3 via-golden2 to-golden text-primary2 px-4 py-1.5 rounded-full font-sans tracking-wide font-bold hover:shadow-lg transition flex items-center gap-2 text-xs sm:text-sm"
         >
           <FontAwesomeIcon icon={faPhone} />
           +91 7888593861
