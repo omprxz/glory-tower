@@ -33,7 +33,7 @@ export default function Footer() {
             >
               <img 
                 src="/logo.png" 
-                alt="Glory Tower logo" 
+                alt="Glory Tower logo"
                 className="h-40 w-auto mb-6"
               />
               <p className="text-primary/70 leading-relaxed mb-6 max-w-md">
