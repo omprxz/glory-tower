@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 const projectViews = [
   { 
     image: '/project/gt1.png', 
-    label: 'The Glory Towers',
+    label: 'Signature Tower',
     area: 'The Iconic Tower'
   },
   { 

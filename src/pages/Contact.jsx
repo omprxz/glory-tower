@@ -43,8 +43,7 @@ export default function Contact() {
                 <FontAwesomeIcon icon={faLocationDot} />
               </div>
               <h3 className="text-2xl font-bold text-golden mb-3">Visit Us</h3>
-              <p className="text-white">
-                The Glory Towers<br />
+              <p className="text-white font-sans">
                 Adjoining gurudwara shri nabha sahib, patiala road, zirkpur, 140603<br />
                 Business District
               </p>

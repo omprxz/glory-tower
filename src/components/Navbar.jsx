@@ -22,7 +22,7 @@ export default function Navbar() {
       >
         <div className="container mx-auto px-4 py-3 flex items-center justify-between bg-gradient-to-b from-golden2/50 to-transparent">
           <Link to="/" className="flex items-center z-50" onClick={handleLinkClick}>
-            <img src="/logo.png" alt="The Glory Towers" className="h-20 md:h-24 w-auto" />
+            <img src="/logo.png" alt="Glory Tower logo" className="h-24 md:h-28 w-auto" />
           </Link>
           
           {/* Desktop Menu */}

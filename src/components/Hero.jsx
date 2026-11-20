@@ -9,9 +9,10 @@ export default function Hero() {
         loop 
         muted 
         playsInline
+        poster="/project/hero.png"
         className="absolute inset-0 w-full h-full object-cover"
       >
-        <source src="/project/teaser.mp4" type="video/mp4" />
+        <source src="/project/hero.mp4" type="video/mp4" />
       </video>
       
       {/* Overlay for better text visibility */}

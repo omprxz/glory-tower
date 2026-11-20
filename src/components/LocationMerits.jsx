@@ -2,7 +2,6 @@ import { motion } from 'framer-motion'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { 
   faLocationDot,
-  faClock
 } from '@fortawesome/free-solid-svg-icons'
 
 const locations = [
@@ -48,11 +47,7 @@ export default function LocationMerits() {
             >
               <div className="flex items-start gap-4">
                 <div className="text-2xl text-golden flex-shrink-0 mt-1">
-                  {location.time ? (
-                    <FontAwesomeIcon icon={faClock} />
-                  ) : (
-                    <FontAwesomeIcon icon={faLocationDot} />
-                  )}
+                  <FontAwesomeIcon icon={faLocationDot} />
                 </div>
                 <div className="flex-1">
                   <p className="text-white leading-relaxed">

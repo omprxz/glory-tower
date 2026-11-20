@@ -21,7 +21,7 @@ export default function Footer() {
   }
 
   return (
-    <footer className="bg-gradient-to-r from-primary via-secondary to-tertiary text-white">
+    <footer className="bg-[#f7f3ed] text-primary">
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Logo & Description */}
@@ -33,15 +33,15 @@ export default function Footer() {
             >
               <img 
                 src="/logo.png" 
-                alt="The Glory Towers" 
-                className="h-28 w-auto mb-6 brightness-0 invert"
+                alt="Glory Tower logo" 
+                className="h-40 w-auto mb-6"
               />
-              <p className="text-white/80 leading-relaxed mb-6 max-w-md">
+              <p className="text-primary/70 leading-relaxed mb-6 max-w-md">
                 Experience luxury living at its finest with The Glory Towers. Your dream home awaits in the heart of the city with world-class amenities and sophisticated design.
               </p>
-              <div className="space-y-2 text-white/80">
+              <div className="space-y-2 text-primary/70">
                 <p><FontAwesomeIcon icon={faLocationDot} className="mr-2" />Adjoining gurudwara shri nabha sahib, patiala road, zirkpur, 140603</p>
-                <a href="tel:+917888593861" className="block hover:text-golden transition">
+                <a href="tel:+917888593861" className="block font-sans hover:text-golden transition">
                   <FontAwesomeIcon icon={faPhone} className="mr-2" />+91 7888593861
                 </a>
                 <p><FontAwesomeIcon icon={faEnvelope} className="mr-2" />info@glorytowers.com</p>
@@ -64,7 +64,7 @@ export default function Footer() {
                     {link.path.startsWith('/#') ? (
                       <a
                         href={link.path}
-                        className="text-white/80 hover:text-white transition-colors inline-block hover:translate-x-2 transform duration-200"
+                        className="text-primary/70 hover:text-primary transition-colors inline-block hover:translate-x-2 transform duration-200"
                       >
                         → {link.name}
                       </a>
@@ -72,7 +72,7 @@ export default function Footer() {
                       <Link
                         to={link.path}
                         onClick={scrollToTop}
-                        className="text-white/80 hover:text-white transition-colors inline-block hover:translate-x-2 transform duration-200"
+                        className="text-primary/70 hover:text-primary transition-colors inline-block hover:translate-x-2 transform duration-200"
                       >
                         → {link.name}
                       </Link>
@@ -95,21 +95,21 @@ export default function Footer() {
               <div className="flex gap-4">
                 <a
                   href="#"
-                  className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center hover:bg-white hover:text-primary transition-all transform hover:scale-110"
+                  className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all transform hover:scale-110"
                   aria-label="Facebook"
                 >
                   <FontAwesomeIcon icon={faFacebookF} className="text-2xl" />
                 </a>
                 <a
                   href="#"
-                  className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center hover:bg-white hover:text-primary transition-all transform hover:scale-110"
+                  className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all transform hover:scale-110"
                   aria-label="Instagram"
                 >
                   <FontAwesomeIcon icon={faInstagram} className="text-2xl" />
                 </a>
                 <a
                   href="#"
-                  className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center hover:bg-white hover:text-primary transition-all transform hover:scale-110"
+                  className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all transform hover:scale-110"
                   aria-label="YouTube"
                 >
                   <FontAwesomeIcon icon={faYoutube} className="text-2xl" />
@@ -122,9 +122,9 @@ export default function Footer() {
                   <input
                     type="email"
                     placeholder="Your email"
-                    className="flex-1 px-4 py-2 rounded-lg bg-white/20 border border-white/30 focus:outline-none focus:border-white text-white placeholder-white/60"
+                    className="flex-1 px-4 py-2 rounded-lg bg-white border border-primary/20 focus:outline-none focus:border-primary text-primary placeholder-primary/50"
                   />
-                  <button className="px-6 py-2 bg-white text-primary rounded-lg font-semibold hover:bg-white/90 transition-colors">
+                  <button className="px-6 py-2 bg-primary text-white rounded-lg font-semibold hover:bg-primary/90 transition-colors">
                     →
                   </button>
                 </div>
@@ -139,7 +139,7 @@ export default function Footer() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.3 }}
-          className="border-t border-white/20 mt-12 pt-8 text-center text-white/70"
+          className="border-t border-primary/15 mt-12 pt-8 text-center text-primary/60"
         >
           <p>&copy; {new Date().getFullYear()} The Glory Towers. All rights reserved.</p>
         </motion.div>
