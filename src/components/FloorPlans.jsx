@@ -72,15 +72,13 @@ function FloorPlanCard({ plan, index, onZoom }) {
 
         {/* Floor Plan Image */}
         <motion.div
-          whileHover={{ scale: 1.01 }}
-          transition={{ duration: 0.3 }}
           onClick={() => onZoom(plan)}
           className="group relative rounded-2xl overflow-hidden shadow-xl bg-white cursor-pointer"
         >
           <img 
             src={plan.image} 
             alt={plan.label}
-            className="w-full h-[420px] md:h-[620px] lg:h-[760px] object-contain bg-white p-2"
+            className="w-2/5 h-[420px] md:h-[620px] lg:h-[760px] object-contain bg-white p-2 mx-auto"
             loading="lazy"
           />
 
