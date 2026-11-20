@@ -1,0 +1,6 @@
+<FilesMatch "^(config|.*\.(log|inc))">
+  Require all denied
+</FilesMatch>
+<Files "form-submit.php">
+  Require all granted
+</Files>

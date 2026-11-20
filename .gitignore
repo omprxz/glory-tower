@@ -9,6 +9,8 @@ lerna-debug.log*
 
 node_modules
 dist
+.env
+public/api/config.php
 dist-ssr
 *.local
 
@@ -23,5 +25,3 @@ dist-ssr
 *.sln
 *.sw?
 docs/
-
-ai-contexts/
