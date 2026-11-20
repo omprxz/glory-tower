@@ -9,6 +9,8 @@ lerna-debug.log*
 
 node_modules
 dist
+.env
+public/api/config.php
 dist-ssr
 *.local
 
@@ -24,4 +26,4 @@ dist-ssr
 *.sw?
 docs/
 
-teaser_cs.mp4
+ai-contexts/
