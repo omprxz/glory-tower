@@ -6,7 +6,7 @@ import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
 const faqs = [
   {
     question: 'What are the apartment configurations available at The Glory Towers?',
-    answer: 'The Glory Towers offers luxury 3 BHK apartments with configuration 1,950 sq.ft. Each unit features spacious layouts, premium finishes, and modern amenities designed for comfortable living. We offer multiple floor plan options to suit different lifestyle preferences and family sizes.'
+    answer: 'The Glory Towers offers luxury 3 BHK apartments with a spacious configuration of 1,950 sq.ft. The architectural design features only 4 apartments per floor with an 8-ft wide central corridor and 3 high-speed elevators. Each apartment is an independent corner home with 3-side open ventilation, 3 bedrooms, 3 attached/en-suite bathrooms, a dedicated puja/store room, and 3 expansive 6-ft wide balconies.'
   },
   {
     question: 'What amenities are included in the The Glory Towers project?',
@@ -23,6 +23,10 @@ const faqs = [
   {
     question: 'What is the location advantage and connectivity of The Glory Towers?',
     answer: 'The Glory Towers is strategically located in a prime area with excellent connectivity to major business districts, educational institutions, healthcare facilities, and entertainment hubs. The property offers easy access to major highways, metro stations, and airports. The neighborhood is rapidly developing with shopping malls, restaurants, and recreational facilities within close proximity, making it an ideal location for both living and investment.'
+  },
+  {
+    question: 'Is The Glory Towers RERA registered?',
+    answer: 'Yes, The Glory Towers is RERA Registered under registration number PBRERA-SAS79-PR1455-112026. All statutory clearances, sanctions, and regulatory approvals are completely in place.'
   },
 ]
 
@@ -60,7 +64,7 @@ function FAQItem({ faq, index, isOpen, onToggle }) {
             transition={{ duration: 0.3 }}
             className="overflow-hidden"
           >
-            <div className="px-6 pb-6 text-white leading-relaxed text-lg">
+            <div className="px-6 pb-6 text-black leading-relaxed text-lg">
               {faq.answer}
             </div>
           </motion.div>
@@ -86,7 +90,7 @@ export default function FAQ() {
             FREQUENTLY ASKED QUESTIONS
           </h2>
           <div className="h-1 w-32 bg-golden mx-auto mb-6" />
-          <p className="text-xl text-white max-w-3xl mx-auto">
+          <p className="text-xl text-black max-w-3xl mx-auto">
             Find answers to common questions about The Glory Towers
           </p>
         </motion.div>

@@ -34,7 +34,7 @@ export default function ContactForm() {
             GET IN TOUCH
           </h2>
           <div className="h-1 w-32 bg-golden mx-auto mb-6" />
-          <p className="text-xl text-white">
+          <p className="text-xl text-black">
             Register your interest and our team will get back to you shortly
           </p>
         </motion.div>
@@ -49,7 +49,7 @@ export default function ContactForm() {
           >
             <form onSubmit={handleSubmit} className="bg-primary/50 p-8 rounded-3xl shadow-xl space-y-6 border-2 border-golden">
               <div>
-                <label className="block text-white font-semibold mb-2">
+                <label className="block text-black font-semibold mb-2">
                   Name *
                 </label>
                 <input
@@ -58,12 +58,12 @@ export default function ContactForm() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border-2 border-golden bg-primary text-white rounded-xl focus:border-golden focus:outline-none transition"
+                  className="w-full px-4 py-3 border-2 border-golden bg-primary text-black rounded-xl focus:border-golden focus:outline-none transition"
                 />
               </div>
               
               <div>
-                <label className="block text-white font-semibold mb-2">
+                <label className="block text-black font-semibold mb-2">
                   Phone Number *
                 </label>
                 <input
@@ -72,12 +72,12 @@ export default function ContactForm() {
                   value={formData.phone}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border-2 border-golden bg-primary text-white rounded-xl focus:border-golden focus:outline-none transition"
+                  className="w-full px-4 py-3 border-2 border-golden bg-primary text-black rounded-xl focus:border-golden focus:outline-none transition"
                 />
               </div>
               
               <div>
-                <label className="block text-white font-semibold mb-2">
+                <label className="block text-black font-semibold mb-2">
                   Your City *
                 </label>
                 <input
@@ -86,7 +86,7 @@ export default function ContactForm() {
                   value={formData.city}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border-2 border-golden bg-primary text-white rounded-xl focus:border-golden focus:outline-none transition"
+                  className="w-full px-4 py-3 border-2 border-golden bg-primary text-black rounded-xl focus:border-golden focus:outline-none transition"
                 />
               </div>
               

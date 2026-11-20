@@ -1,14 +1,54 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import { motion } from 'framer-motion'
 
 export default function PostBedroom() {
   return (
     <div>
       <Navbar />
-      <div className="container mx-auto px-4 py-16">
-        <h1 className="text-5xl font-extrabold mb-8 bg-gradient-to-r from-golden3 via-golden2 to-golden bg-clip-text text-transparent">Premium Bedrooms</h1>
-        <img src="/project/bedroom.png" alt="Bedroom" className="w-full max-w-2xl mx-auto rounded-2xl shadow-lg mb-8" />
-        <p className="text-lg text-white/80 mb-8">Experience the epitome of comfort and elegance in the premium bedrooms at The Glory Towers. Our latest post takes you on a tour of these spacious retreats, designed to offer tranquility and style. Each bedroom features large windows, plush flooring, and custom wardrobes, creating a serene environment for rest and relaxation. The post highlights the attention to detail in every aspect, from the choice of soothing color palettes to the integration of smart home technology. Residents enjoy private balconies with breathtaking views, en-suite bathrooms with luxury fittings, and ample storage space for convenience. The bedrooms are crafted to maximize natural light and ventilation, ensuring a healthy and refreshing atmosphere. Discover how The Glory Towers combines functionality with aesthetics, making every bedroom a personal haven. Whether you are starting your day or winding down at night, these premium spaces promise comfort, privacy, and a touch of opulence that elevates everyday living.</p>
+      <div className="container mx-auto px-4 py-16 mt-24 max-w-4xl">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-8 bg-gradient-to-r from-golden3 via-golden2 to-golden bg-clip-text text-transparent">
+            Premium Bedrooms
+          </h1>
+
+          <div className="rounded-3xl overflow-hidden shadow-2xl mb-8 border-2 border-golden/40 bg-white">
+            <img 
+              src="/project/bedroom.png" 
+              alt="Bedroom" 
+              className="w-full h-80 md:h-[450px] object-cover" 
+            />
+          </div>
+
+          <p className="text-lg text-black/80 mb-10 leading-relaxed">
+            Experience the epitome of comfort and elegance in the premium 3 BHK residences at The Glory Towers. Each bedroom features spacious layouts, large private balconies, en-suite bathrooms, and panoramic open views.
+          </p>
+
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl border-2 border-golden/40 bg-gradient-to-br from-primary via-secondary to-tertiary p-4 md:p-8 mb-10">
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-golden">
+                3 BHK Floor Plan
+              </h2>
+              <span className="bg-gradient-to-r from-golden3 via-golden2 to-golden px-4 py-1 rounded-full text-primary font-bold text-sm md:text-base">
+                1,950 Sq.ft
+              </span>
+            </div>
+
+            <div className="rounded-2xl overflow-hidden bg-white p-2 shadow-inner">
+              <a href="/project/plan/unit-floor-plan.png" target="_blank" rel="noopener noreferrer">
+                <img 
+                  src="/project/plan/unit-floor-plan.webp" 
+                  alt="3 BHK Unit Floor Plan" 
+                  className="w-full max-h-[600px] object-contain mx-auto" 
+                />
+              </a>
+            </div>
+          </div>
+        </motion.div>
       </div>
       <Footer />
     </div>

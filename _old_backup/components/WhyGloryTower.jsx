@@ -49,7 +49,7 @@ export default function WhyGloryTower() {
             WHY THE GLORY TOWERS
           </h2>
           <div className="h-1 w-32 bg-golden mx-auto mb-6" />
-          <p className="text-xl text-white max-w-3xl mx-auto">
+          <p className="text-xl text-black max-w-3xl mx-auto">
             Discover the perfect blend of luxury, comfort, and convenience that makes The Glory Towers the ideal choice for your dream home.
           </p>
         </motion.div>
@@ -71,7 +71,7 @@ export default function WhyGloryTower() {
               <h3 className="text-2xl font-bold text-golden mb-3">
                 {feature.title}
               </h3>
-              <p className="text-white leading-relaxed">
+              <p className="text-black leading-relaxed">
                 {feature.description}
               </p>
             </motion.div>

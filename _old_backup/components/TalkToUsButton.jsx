@@ -32,7 +32,7 @@ export default function TalkToUsButton() {
         href="https://wa.me/917888593861"
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-gradient-to-r from-green-400 via-green-500 to-green-600 text-white px-5 py-2.5 rounded-full shadow-2xl font-bold text-base flex items-center gap-2"
+        className="bg-gradient-to-r from-green-400 via-green-500 to-green-600 text-black px-5 py-2.5 rounded-full shadow-2xl font-bold text-base flex items-center gap-2"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         animate={{
