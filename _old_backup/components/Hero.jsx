@@ -19,7 +19,7 @@ export default function Hero() {
         poster="/project/hero.png"
         className="absolute inset-0 w-full h-full object-cover"
       >
-        <source src="/project/hero.mp4" type="video/mp4" />
+        <source src="/project/teaser.mp4" type="video/mp4" />
       </video>
       
       {/* Subtle top vignette */}

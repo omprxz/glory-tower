@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { 
   faLocationDot,
+  faClock,
   faExpand,
   faTimes,
   faMap,
@@ -57,7 +58,7 @@ export default function LocationMerits() {
               <div className="flex items-start gap-3 sm:gap-4">
                 <div className="text-xl sm:text-2xl text-golden flex-shrink-0 mt-1">
                   {location.time ? (
-                    <FontAwesomeIcon icon={faLocationDot} />
+                    <FontAwesomeIcon icon={faClock} />
                   ) : (
                     <FontAwesomeIcon icon={faLocationDot} />
                   )}
